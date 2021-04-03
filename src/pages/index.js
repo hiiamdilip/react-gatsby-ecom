@@ -20,7 +20,7 @@ const IndexPage = ({ data }) => (
     <InfoBlock heading="About Us"/>
     <CourseCart courses={data.courses}/>
     <DualInfoBlock 
-    heading="Our Team"
+    heading="Just click photos"
     img="https://images.pexels.com/photos/2756844/pexels-photo-2756844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     />
   </Layout>

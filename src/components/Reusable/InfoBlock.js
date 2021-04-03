@@ -11,7 +11,7 @@ export default function InfoBlock({heading}) {
                     <p className="lead text-white mb-4">
                         jjjjjjjjj
                     </p>
-                    <Link to="/about/">
+                    <Link to="/contact/">
                         <button className="btn btn-warning btn-lg">{heading}</button>
                     </Link>
                 </div>

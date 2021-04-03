@@ -22,7 +22,7 @@ const AboutPage = ({ data }) => (
     img="https://images.pexels.com/photos/2756844/pexels-photo-2756844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     />
     <InfoBlock heading="About Vison"/>
-    <TeamPhotoSection/>
+    <TeamPhotoSection heading="Meet the team"/>
   </Layout>
 )
 

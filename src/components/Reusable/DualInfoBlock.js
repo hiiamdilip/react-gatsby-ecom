@@ -15,11 +15,11 @@ export default function DualInfoBlock({heading, img}) {
                     </p>
                 </div>
                 <div className="col-4">
-                      <div class="card bg-dark"  >
-                          <img src={img} class="card-img-top" alt="image"/>
-                          <div class="card-body">
-                              <h5 class="card-title text-success">Just click photos</h5>
-                              <p class="card-text text-white">
+                      <div className="card bg-dark"  >
+                          <img src={img} className="card-img-top" alt="image"/>
+                          <div className="card-body">
+                              <h5 className="card-title text-success">Just click photos</h5>
+                              <p className="card-text text-white">
                                   ddddddddddddddddddddd
                               </p>
                               <Link to="./team" className="btn btn-warning btn-block">

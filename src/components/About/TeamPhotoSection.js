@@ -1,32 +1,34 @@
 import React from 'react'
+import Heading from '../Reusable/Heading';
+import team1 from '../../images/rashmi.jpg';
+import team2 from '../../images/dilip.jpg';
+import team3 from '../../images/diwas.jpg';
 
-export default function TeamPhotoSection() {
+export default function TeamPhotoSection({heading}) {
     return (
-        <div classname="row">
+        <div className="row">
             <div className="col-10 col-sm-10 mx-auto">
+            <Heading title={heading}/>
             <div className="card-group">
             <div className="card">
-                <img src="https://images.pexels.com/photos/1739852/pexels-photo-1739852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..."/>
+                <img src={team1} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                <h5 className="card-title">Diwas</h5>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 className="card-title">Rashmi Prasad</h5>
+                <p className="card-text">Software Develeoper@Cisco</p>
                 </div>
             </div>
             <div className="card">
-                <img src="https://images.pexels.com/photos/1739852/pexels-photo-1739852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..."/>
+                <img src={team2} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                <h5 className="card-title">Rahul</h5>
-                <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 className="card-title">Dilip Kumar</h5>
+                <p className="card-text">Senior Member of Technical Staff@Oracle</p>
                 </div>
             </div>
             <div className="card">
-                <img src="https://images.pexels.com/photos/1739852/pexels-photo-1739852.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="card-img-top" alt="..."/>
+                <img src={team3} className="card-img-top" alt="..."/>
                 <div className="card-body">
-                <h5 className="card-title">Suraj</h5>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <h5 className="card-title">Diwas Sedai</h5>
+                <p className="card-text">Security Engineer@Visa</p>
                 </div>
             </div>
             </div>

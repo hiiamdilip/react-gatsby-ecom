@@ -5,24 +5,19 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from '../components/Reusable/HeroSection'
 import InfoBlock from '../components/Reusable/InfoBlock'
-import DualInfoBlock from '../components/Reusable/DualInfoBlock'
-import TeamPhotoSection from '../components/About/TeamPhotoSection'
+import Contact from '../components/Contact/Contact'
 
-const AboutPage = ({ data }) => (
+const ContactPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection
     img={data.img.childImageSharp.fluid}
-    title="About LearnCodeOnline"
+    title="Contact us"
     subtitle=""
     heroclass="about-background"
     />
-    <DualInfoBlock 
-    heading="A message from CEO"
-    img="https://images.pexels.com/photos/2756844/pexels-photo-2756844.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-    />
-    <InfoBlock heading="About Vison"/>
-    <TeamPhotoSection/>
+    <InfoBlock heading="How Can we help"/>
+    <Contact/>
   </Layout>
 )
 
@@ -38,4 +33,4 @@ export const query = graphql`
 }
 `
 
-export default AboutPage
+export default ContactPage
