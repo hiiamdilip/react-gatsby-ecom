@@ -14,21 +14,21 @@ export default function TeamPhotoSection({heading}) {
                 <img src={team1} className="card-img-top" alt="..."/>
                 <div className="card-body">
                 <h5 className="card-title">Rashmi Prasad</h5>
-                <p className="card-text">Software Develeoper@Cisco</p>
+                <p className="card-text">Chief Financial Officer@LearnCode</p>
                 </div>
             </div>
             <div className="card">
                 <img src={team2} className="card-img-top" alt="..."/>
                 <div className="card-body">
                 <h5 className="card-title">Dilip Kumar</h5>
-                <p className="card-text">Senior Member of Technical Staff@Oracle</p>
+                <p className="card-text">Chief Executive Officer@LearnCode</p>
                 </div>
             </div>
             <div className="card">
                 <img src={team3} className="card-img-top" alt="..."/>
                 <div className="card-body">
                 <h5 className="card-title">Diwas Sedai</h5>
-                <p className="card-text">Security Engineer@Visa</p>
+                <p className="card-text">Chief Technical Officer@LearnCode</p>
                 </div>
             </div>
             </div>

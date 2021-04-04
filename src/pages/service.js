@@ -5,25 +5,32 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import HeroSection from '../components/Reusable/HeroSection'
 import InfoBlock from '../components/Reusable/InfoBlock'
-import Contact from '../components/Contact/Contact'
+import DualInfoBlock from '../components/Reusable/DualInfoBlock'
+import TeamPhotoSection from '../components/About/TeamPhotoSection'
+import ceo from '../images/ceo.jpg';
 
-const ContactPage = ({ data }) => (
+const ServicePage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection
     img={data.img.childImageSharp.fluid}
-    title="Contact us"
+    title="What we offer at LearnCode"
     subtitle=""
     heroclass="about-background"
     />
-    <InfoBlock heading="How Can we help"/>
-    <Contact/>
+    <DualInfoBlock 
+    heading="A message from CEO"
+    subHeading="Dilip Kumar, CEO"
+    img={ceo}
+    />
+    <InfoBlock heading="About Vison"/>
+    <TeamPhotoSection heading="Meet the team"/>
   </Layout>
 )
 
 export const query = graphql`
 {
-  img: file(relativePath: { eq: "contact.png" }) {
+  img: file(relativePath: { eq: "service.jpeg" }) {
     childImageSharp {
       fluid {
       ...GatsbyImageSharpFluid_tracedSVG
@@ -33,4 +40,4 @@ export const query = graphql`
 }
 `
 
-export default ContactPage
+export default ServicePage

@@ -8,7 +8,7 @@ const getCaty = items => {
     })
     let holdCategories = new Set(holdItems)
     let categories = Array.from(holdCategories)
-    categories = ["all", ...categories]
+    categories = ["All", ...categories]
     return categories;
 }
 
@@ -42,7 +42,7 @@ export default class CourseCart extends Component {
         return (
             <section className="py-5">
                 <div className="container">
-                    <Heading title="Courses"/>
+                    <Heading title="Our Amazing Online Courses"/>
                     <div className="row my-3">
                         <div className="col-10 mx-auto text-center">
                             {this.state.mycategories.map((category, index) =>{
@@ -72,7 +72,7 @@ export default class CourseCart extends Component {
                                   <div className="flex-grow-1 px-3">
                                       <div className="d-flex">
                                             <h6 className="mb-0">{node.title}</h6>
-                                            <h6 className="mb-0 text-success">${node.price}</h6>
+                                            <h6 className="mb-0 text-success px-3">${node.price}</h6>
                                        </div>
                                        <p className="text-muted">
                                            <small>{node.description.description}</small>

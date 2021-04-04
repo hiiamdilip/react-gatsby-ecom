@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby';
-import logo from '../../images/logo.png';
+import logo from '../../images/logodilip.jpg';
 import { FaCartArrowDown } from "react-icons/fa";
 
 export default class Navbar extends Component {
@@ -19,7 +19,7 @@ export default class Navbar extends Component {
         }, {
             id:3,
             text: "Services",
-            url: '/services',
+            url: '/service',
         }, {
             id:4,
             text: "Contact",
