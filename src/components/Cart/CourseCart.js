@@ -25,7 +25,7 @@ export default class CourseCart extends Component {
     cateClicked = category => {
         let keepItSafe = [...this.state.courses]
 
-        if(category === 'all'){
+        if(category === 'All'){
             this.setState(() => {
                 return {mycourses: keepItSafe}
             })
