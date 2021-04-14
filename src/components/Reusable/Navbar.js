@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby';
 import logo from '../../images/logodilip.jpg';
 import { FaCartArrowDown } from "react-icons/fa";
+import { FaBars } from "react-icons/fa";
 
 export default class Navbar extends Component {
     
@@ -44,7 +45,10 @@ export default class Navbar extends Component {
                     <img src={logo} alt="logo goes here" width="40px"/>
                 </Link>
                 <button className="navbar-toggler" type="button" onClick={this.myToggler}>
-                    <span className="text-white">menu</span>
+                    <span className="text-white text-uppercase">
+                        Menu
+                        <FaBars/>
+                    </span>
                 </button>
                 <div className={this.state.navbarClass}>
                     <ul className="navbar-nav ml-auto mr-5">
